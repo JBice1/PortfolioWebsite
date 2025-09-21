@@ -6,8 +6,8 @@
 
 
 :root{
-    --ff-primary: 'Source Sans Pro', sans-serif;
-    --ff-secondary: 'Source Code Pro', monospace;
+    --ff-primary: 'Times New Roman', Times, serif;
+    --ff-secondary: 'Georgia', serif;
     
     --fw-reg: 300;
     --fw-bold: 900;
@@ -15,6 +15,7 @@
     --clr-light:#fff;
     --clr-dark:#303030;
     --clr-accent:#b99095;
+    --clr-accent2:#3d5b59;
 
     --fs-h1: 3rem;
     --fs-h2: 2.5rem;
@@ -58,6 +59,22 @@ img{
 strong{
     font-weight: var(--fw-bold);
 }
+.btn{
+    display: inline-block;
+    padding: .5em 1.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none ;
+    cursor: pointer;
+    font-size: .8rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+.btn:hover{
+    transform: scale(1.1);
+}
 
 /* Typography */
 
@@ -100,7 +117,7 @@ h3 {
 }
 /* Navigation */
 .logo{
-    max-width: 140px;
+    max-width: 120px;
 }
 header{
     display:flex;
@@ -184,7 +201,7 @@ button img {
     }
     .intro_image{
         grid-area: img;
-        min-width: 250px;
+        min-width: 300px;
         position: relative;
         z-index: 2;
     }
@@ -233,8 +250,47 @@ button img {
        grid-area:image;
        position: relative;
        z-index: 2;
+       max-width: 250px;
     }
 }
+/* Leadership Section */
+
+.leadership_experience{
+    background: var(--clr-accent2);
+    background-image: url('../img/sun.png');
+    background-size: cover;
+    color: var(--clr-light);
+    background-blend-mode: multiply;
+    text-align: center;
+}
+.leadership_title{
+    color: var(--clr-accent);
+    position: relative;
+}
+.leadership_title::after{
+    content: '';
+    display: block;
+    width: 25%;
+    height: 1px;
+    background: var(--clr-light);
+    margin: 0.5em auto 1em;
+}
+.service{
+    max-width: 500px;
+    margin: 0 auto 2em;
+}
+@media (min-width:800px){
+    .leadership{
+        display: flex;
+        max-width: 2000px;
+        margin: 0 auto;
+        min-width: 50px;
+    }
+    .experience + .experience{
+        margin-left: 2em;
+    }
+}
+
 /* Projects Section */
 
 .projects{
@@ -272,7 +328,7 @@ portfolio_item:focus .portfolio_image{
     background: #111;
     color: var(--clr-accent);
     text-align: center;
-    padding: 2.5em 0;
+    padding: 1em 0;
 }
 .footer a{
     color: inherit;
@@ -298,4 +354,18 @@ portfolio_item:focus .portfolio_image{
 }
 .socials_link{
     padding: .5em;
+}
+
+/*Portfolio Item Individual*/
+.portfolio_item_individual{
+    text-align: center;
+    padding: 0 2em 2em;
+    max-width: 1000px;
+    margin: 0 auto;
+    
+}
+.portfolio_item_individual p{
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;;
 }

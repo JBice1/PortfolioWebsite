@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jillian Bice's Portfolio Website</title>
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css">
+        <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.1/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfr0j+BmwXdxFgVK/Kvc=" crossorigin="anonymous"/>
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Ovo&display=swap" rel="stylesheet">
+        <link href=""https://fonts.googleapis.com/css?family=Source+Code+Pro:400.900|Source+Sans+Pro:400,700|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">
+                <img src="img/JB.png" alt="Jillian Bice's Logo">
+            </div>
+            <button class="nav_toggle" aria-label="toggle navigation">
+                <img class="hamburger" src="img/menu.png">
+            </button>
+            <nav class = "nav">
+                <ul class="nav_list">
+                    <li class="nav_item"><a href="index.html" class="nav_link">Home</a></li>
+                    <li class="nav_item"><a href="index.html#leadership" class="nav_link">Leadership Experience</a></li>
+                    <li class="nav_item"><a href="index.html#about" class="nav_link">About Me</a></li>
+                    <li class="nav_item"><a href="index.html#projects" class="nav_link">Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <section class="intro">
+            <h1 class="section_title intro_title">
+               Comprehensive <strong>Shell</strong>
+            </h1>
+            <p class="section_subtitle intro_subtitle">A user-friendly unix shell</p>
+            <img src="img/terminal.png" alt="" class="intro_image">
+        </section>
+        <div class = "portfolio_item_individual">
+            <p>
+                This is a comprehensive shell that enhances process control, user 
+                interaction, and error handling. This shell uses parent-child relations, 
+                process creation, and user-input parsing and verification to manage and 
+                execute user commands. It allows for the path search specified in the $PATH 
+                environment varibale, ensuringing the shell can execute commands regardless 
+                of the current working directory. This shell also supports essential shell 
+                features such as input/output redirection, piping, and background processing. 
+                All of these features combine to make a robust and user freindly shell interface 
+                that allows the user to effieciently interact with the operating system.
+            </p>
+            <a href="index.html#projects" class="btn">Back to Projects</a>
+        </div>
+        <!-- Footer -->
+        <footer class="footer">
+            <a href="mailto:jcb22b@fsu.edu" class="footer_links">JCB22B@fsu.edu</a>
+            <ul class="socials_list">
+                <li class="socials_item">
+                    <a class="socials_link" href="https://www.linkedin.com/in/jillian-bice-4b0a621b4/">
+                        LinkedIn
+                    </a></li>
+                <li class="socials_item">
+                    <a class="socials_link" href="https://www.linkedin.com/in/jillian-bice-4b0a621b4/">
+                        GitHub
+                    </a></li>               
+            </ul>
+            <p class="footer_text">&copy; 2024 Jillian Bice. All rights reserved.</p>
+        </footer>
+        <script src="js/index.js"></script>
+    </body>
+</html>
