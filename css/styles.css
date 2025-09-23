@@ -16,6 +16,7 @@
     --clr-dark:#303030;
     --clr-accent:#b99095;
     --clr-accent2:#3d5b59;
+    --clr-accent3:#b5e5cf;
 
     --fs-h1: 3rem;
     --fs-h2: 2.5rem;
@@ -117,12 +118,12 @@ h3 {
 }
 /* Navigation */
 .logo{
-    max-width: 120px;
+    max-width: 100px;
 }
 header{
     display:flex;
     justify-content: space-between;
-    padding: 1em;
+    padding: 0;
 }
 .nav{
     position: fixed;
@@ -165,7 +166,7 @@ header{
     top: 1em;
     z-index: 1000;
     max-width: 55px;
-    padding-top: 30px;
+    padding-top: 10px;
 }
 .nav-open .nav{
     transform:translateX(0);
@@ -201,7 +202,7 @@ button img {
     }
     .intro_image{
         grid-area: img;
-        min-width: 300px;
+        min-width: 350px;
         position: relative;
         z-index: 2;
     }
@@ -253,19 +254,20 @@ button img {
        max-width: 250px;
     }
 }
+
 /* Leadership Section */
 
 .leadership_experience{
     background: var(--clr-accent2);
-    background-image: url('../img/sun.png');
+    background-image: url('../img/rocks.JPEG');
     background-size: cover;
     color: var(--clr-light);
     background-blend-mode: multiply;
-    text-align: center;
 }
 .leadership_title{
     color: var(--clr-accent);
     position: relative;
+    text-align: center;
 }
 .leadership_title::after{
     content: '';
@@ -275,10 +277,19 @@ button img {
     background: var(--clr-light);
     margin: 0.5em auto 1em;
 }
+.experience_title{
+    color: var(--clr-accent);
+    text-align: center;
+}
+.experience p{
+    text-align: justify;
+    max-width: 1000px;
+}
 .service{
     max-width: 500px;
     margin: 0 auto 2em;
 }
+
 @media (min-width:800px){
     .leadership{
         display: flex;
@@ -309,7 +320,7 @@ button img {
     grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
 }
 .portfolio_item{
-    background: var(--clr-accent);
+    background: var(--clr-accent2);
     overflow: hidden;
 }
 .portfolio_image{
@@ -368,4 +379,9 @@ portfolio_item:focus .portfolio_image{
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;;
+    text-align: justify;
+
+}
+.portfolio_item_individual img{
+    padding-top: 1.5em;
 }
