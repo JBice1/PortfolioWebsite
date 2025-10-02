@@ -202,7 +202,7 @@ button img {
     }
     .intro_image{
         grid-area: img;
-        min-width: 350px;
+        min-width: 450px;
         position: relative;
         z-index: 2;
     }
@@ -384,4 +384,10 @@ portfolio_item:focus .portfolio_image{
 }
 .portfolio_item_individual img{
     padding-top: 1.5em;
+}
+.info_links{
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(300px,1fr));
+    grid-gap: 1em;
+    justify-items: center;
 }
