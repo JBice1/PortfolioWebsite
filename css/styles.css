@@ -263,8 +263,6 @@ button img {
     background-size: cover;
     color: var(--clr-light);
     background-blend-mode: multiply;
-    align-content: center;
-    text-align: center;
 }
 .leadership_title{
     color: var(--clr-accent);
@@ -286,13 +284,14 @@ button img {
 .experience p{
     text-align: justify;
     max-width: 900px;
-    align-content: center;
-    align-items: center;
 
 }
 .service{
     max-width: 500px;
     margin: 0 auto 2em;
+}
+.experience{
+    text-align: center;
 }
 
 @media (min-width:800px){
@@ -301,7 +300,6 @@ button img {
         max-width: 2000px;
         margin: 0 auto;
         min-width: 50px;
-        align-items: center;
     }
     .experience + .experience{
         margin-left: 2em;
