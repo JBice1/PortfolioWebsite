@@ -263,6 +263,8 @@ button img {
     background-size: cover;
     color: var(--clr-light);
     background-blend-mode: multiply;
+    align-content: center;
+    text-align: center;
 }
 .leadership_title{
     color: var(--clr-accent);
@@ -282,19 +284,15 @@ button img {
     text-align: center;
 }
 .experience p{
-    text-align: left;
-    margin: 0 auto;
-    line-height: 1.6;
+    text-align: justify;
+    max-width: 900px;
+    align-content: center;
+    align-items: center;
 
 }
 .service{
     max-width: 500px;
     margin: 0 auto 2em;
-}
-.experience{
-    max-width: 900px;
-    margin: 0 auto 3em;
-    text-align: center;
 }
 
 @media (min-width:800px){
@@ -307,6 +305,17 @@ button img {
     .experience + .experience{
         margin-left: 2em;
     }
+}
+
+.ITexperience{
+    max-width: 900px;
+    margin: 0 auto 3em;
+    text-align: center;
+}
+.ITexperience p {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
 /* Projects Section */
