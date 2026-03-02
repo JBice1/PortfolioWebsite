@@ -258,6 +258,7 @@ button img {
 /* Leadership Section */
 
 .leadership_experience{
+    align-items: center;
     background: var(--clr-accent2);
     background-image: url('../img/rocks.JPEG');
     background-size: cover;
