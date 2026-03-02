@@ -282,8 +282,9 @@ button img {
     text-align: center;
 }
 .experience p{
-    text-align: justify;
+    text-align: center;
     max-width: 900px;
+
 }
 .service{
     max-width: 500px;
