@@ -263,6 +263,7 @@ button img {
     background-size: cover;
     color: var(--clr-light);
     background-blend-mode: multiply;
+    align-content: center;
 }
 .leadership_title{
     color: var(--clr-accent);
