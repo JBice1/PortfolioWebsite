@@ -258,7 +258,6 @@ button img {
 /* Leadership Section */
 
 .leadership_experience{
-    align-items: center;
     background: var(--clr-accent2);
     background-image: url('../img/rocks.JPEG');
     background-size: cover;
@@ -283,7 +282,7 @@ button img {
     text-align: center;
 }
 .experience p{
-    text-align: center;
+    text-align: justify;
     max-width: 900px;
 
 }
@@ -298,6 +297,7 @@ button img {
         max-width: 2000px;
         margin: 0 auto;
         min-width: 50px;
+        align-items: center;
     }
     .experience + .experience{
         margin-left: 2em;
